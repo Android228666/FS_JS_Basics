@@ -78,3 +78,22 @@
 // }
 
 // console.log(price);
+
+const option = 5;
+let message = "";
+
+switch (option) {
+  case 1:
+    message = `You can take your goods tomorrow after 12:00 in our office.`;
+    break;
+  case 2:
+    message = `Courier will deliver your order tomorrow within 9:00 and 18:00.`;
+    break;
+  case 3:
+    message = `Your parcel will be send today.`;
+    break;
+  default:
+    message = "Manager will call you.";
+}
+
+console.log(message);
