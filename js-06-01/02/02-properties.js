@@ -1,26 +1,47 @@
-// const magicBtn = document.querySelector(".js-magic-btn");
+const magicBtn = document.querySelector(".js-magic-btn");
+
 // magicBtn.addEventListener("click", () => {
-//     const imageEl = document.querySelector(".hero__image");
-//     console.log("imageEl: ", imageEl);
-//     console.log(imageEl.src);
-//     imageEl.src =
-//         "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg";
-//     imageEl.alt = "New kitty";
+//     const imageRef = document.querySelector(".hero__image");
+//     console.log("imageRef: ", imageRef);
+//     console.log(imageRef.src);
+//     imageRef.src =
+//         "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg";
+
+//     imageRef.alt = "This is a new cat";
 // });
 
-const imageEl = document.querySelector(".hero__image");
-// console.log("imageEl: ", imageEl);
-// console.log(imageEl.src);
-imageEl.src =
-    "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg";
-imageEl.alt = "New kitty";
+const imageRef = document.querySelector(".hero__image");
+// console.log("imageRef: ", imageRef);
+// console.log(imageRef.src);
+imageRef.src =
+    "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg";
 
-const heroTitleEl = document.querySelector(".hero__title");
-// console.log("heroTitleEl", heroTitleEl);
-// console.log(heroTitleEl.textContent);
-heroTitleEl.textContent = "I am funny!";
+// console.log(
+//     imageRef.setAttribute(
+//         "src",
+//         "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+//     ),
+// );
 
-console.log(imageEl.getAttribute("alt"));
+const heroTitleRef = document.querySelector(".hero__title");
+// console.log("heroTitleRef: ", heroTitleRef);
 
-// imageEl.removeAttribute("src");
-console.log(imageEl.hasAttribute("src1"));
+// console.log(heroTitleRef.textContent);
+heroTitleRef.textContent = "Meow";
+// console.log(heroTitleRef.textContent);
+
+// console.log(imageRef.getAttribute("src"));
+// console.log(imageRef.src);
+
+// imageRef.removeAttribute("src");
+// console.log(imageRef.hasAttribute("src"));
+
+const actionsRef = document.querySelectorAll(".js-actions button");
+console.log(actionsRef[2].dataset.x);
+
+// console.log(actionsRef[2].getAttribute("data-action"));
+
+magicBtn.addEventListener("click", () => {
+    const inputRef = document.querySelector(".js-input");
+    console.log(inputRef);
+});
