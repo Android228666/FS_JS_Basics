@@ -43,5 +43,6 @@ console.log(actionsRef[2].dataset.x);
 
 magicBtn.addEventListener("click", () => {
     const inputRef = document.querySelector(".js-input");
-    console.log(inputRef);
+    console.log(inputRef.value);
+    inputRef.value = "qwe1223";
 });

@@ -1,0 +1,7 @@
+.site-nav__link {
+    color: currentColor;
+    text-decoration: none;
+}
+.site-nav__link--current {
+    color: tomato;
+}
