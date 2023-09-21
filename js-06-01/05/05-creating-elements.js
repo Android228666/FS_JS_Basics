@@ -5,11 +5,11 @@ titleEl.textContent = "It is title of the page!";
 // document.body.appendChild(titleEl);
 // console.log(document.head);
 
-// const imageEl = document.createElement("img");
-// imageEl.src =
-//     "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg";
-// imageEl.alt = "image";
-// imageEl.width = 440;
+const imageEl = document.createElement("img");
+imageEl.src =
+    "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg";
+imageEl.alt = "image";
+imageEl.width = 320;
 // console.log(imageEl);
 
 // document.body.appendChild(imageEl);
@@ -30,4 +30,12 @@ navItemEl.appendChild(navLinkEl);
 console.log(navItemEl);
 
 const navEl = document.querySelector(".site-nav");
-navEl.appendChild(navItemEl);
+// navEl.appendChild(navItemEl);
+
+navEl.insertBefore(navItemEl, navEl.firstElementChild);
+
+const heroEl = document.querySelector(".hero");
+// heroEl.appendChild(titleEl);
+// heroEl.appendChild(imageEl);
+heroEl.append(titleEl, imageEl);
+// heroEl.prepend(navItemEl);
